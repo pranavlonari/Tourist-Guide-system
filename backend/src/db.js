@@ -3,7 +3,7 @@
 const mysql = require("mysql2/promise");
 
 const ssl = process.env.DB_SSL_REQUIRED === "true"
-  ? { rejectUnauthorized: process.env.DB_SSL_REJECT_UNAUTHORIZED !== "false" }
+  ? { rejectUnauthorized: process.env.DB_SSL_REJECT_UNAUTHORIZED === "true" }
   : undefined;
 
 const pool = mysql.createPool({
