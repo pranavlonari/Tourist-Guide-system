@@ -2,7 +2,7 @@
   "version": 2,
   "framework": null,
   "buildCommand": null,
-  "installCommand": "npm ci --prefix backend",
+  "installCommand": "npm ci",
   "functions": {
     "api/index.js": {
       "includeFiles": "frontend/**"
