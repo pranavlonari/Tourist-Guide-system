@@ -95,7 +95,7 @@ replace every placeholder with a real production value.
 | `DB_USER` | Yes | restricted application user | MySQL username. |
 | `DB_PASSWORD` | Yes | secret value | MySQL password. |
 | `DB_SSL_REQUIRED` | Recommended for hosted MySQL | `true` | Enables TLS for providers such as Aiven. |
-| `DB_SSL_REJECT_UNAUTHORIZED` | Recommended | `true` | Validates the provider's TLS certificate. Keep `true` for production. |
+| `DB_SSL_REJECT_UNAUTHORIZED` | Required by some Aiven setups | `false` | Keeps transport encrypted when the provider certificate chain is not trusted by the Node runtime. Prefer `true` with the provider CA certificate when available. |
 | `PUBLIC_BASE_URL` | Recommended | `https://travel.example.com` | Used when generating payment QR URLs. |
 | `DEMO_ADMIN_EMAIL` | Optional | empty in production | Used only by the demo-account seed script. |
 | `DEMO_ADMIN_PASSWORD` | Optional | empty in production | Used only by the demo-account seed script. |
