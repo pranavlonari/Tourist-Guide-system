@@ -1,7 +1,7 @@
 {
   "version": 2,
   "framework": null,
-  "buildCommand": false,
+  "buildCommand": null,
   "installCommand": "npm ci --prefix backend",
   "functions": {
     "api/index.js": {
