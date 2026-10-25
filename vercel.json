@@ -3,9 +3,7 @@
   "installCommand": "npm ci --prefix backend",
   "functions": {
     "api/index.js": {
-      "includeFiles": [
-        "frontend/**"
-      ]
+      "includeFiles": "frontend/**"
     }
   },
   "rewrites": [
